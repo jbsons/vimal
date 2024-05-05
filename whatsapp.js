@@ -51,16 +51,17 @@ function sendToWhatsapp(){
 
 	var url = "https://wa.me/" + number + "?text="
 	+ "*Route No 31* " + "%0a%0a"
-	+ "બૂથનું નામ: " +booth+ "%0a%0a"
+	+ "બૂથનું નામ: " +booth+ "%0a"
+	+ "કુલ મતદાર: " +total_booth_votes+ "%0a"
 	+ "સમય : " +time+ "%0a%0a"
-	+ "પુરુષ : " +male+ "%0a%0a"
-	+ "સ્ત્રી : " +female+ "%0a%0a"
+	+ "પુરુષ : " +male+ "%0a"
+	+ "સ્ત્રી : " +female+ "%0a"
 	+ "અન્ય : " +other+ "%0a%0a"
-	+ "ટોટલ : " +total+ "%0a%0a"
+	+ "ટોટલ : " +total+ "%0a"
 	+ "CU મુજબ ટોટલ : " +cu_total+ "%0a%0a"
 	+ "મતદાન ટકાવારી : " +percent+ "%0a%0a"
-	+ "મોકપોલ એજંટની સંખ્યા : " +mokpoll_agent+ "%0a%0a"
-	+ "વોટ એજંટની સંખ્યા : " +vote_agent+ "%0a%0a";
+	+ "મોકપોલ એજંટની સંખ્યા : " +mokpoll_agent+ "%0a"
+	+ "વોટ એજંટની સંખ્યા : " +vote_agent+ "%0a";
 
 
 	window.open(url, '_blank').focus();
