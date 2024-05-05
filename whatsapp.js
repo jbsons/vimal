@@ -42,7 +42,7 @@ function sendToWhatsapp(){
 	let male = document.getElementById('male').value;
 	let female = document.getElementById('female').value;
 	let other = document.getElementById('other').value;
-	let total = document.getElementById('other').value;
+	let total = document.getElementById('total').value;
 	let cu_total = document.getElementById('cu_total').value;
 	let mokpoll_agent = document.getElementById('mokpoll_agent').value;
 	let vote_agent = document.getElementById('vote_agent').value;
