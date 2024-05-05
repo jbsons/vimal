@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="whatsapp.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Route No:31</h2>
+		<br>
+		<!-- <p>Leave your message and we will get back to you shortly</p> -->
+		<form action="" onsubmit="sendToWhatsapp()">
+			<div>
+				<span>
+					<label for="booth">Select Booth</label></br>
+					<select onchange="findVotes()" id="booth" name="Booth_name" required>
+						<option value="" selected>----  Select ----</option>
+						<option value="136 - સાબલવાડ કંપા (જનકપુરા)">136 - સાબલવાડ કંપા (જનકપુરા)</option>
+						<option value="103 - કાવા - ૧">103 - કાવા - ૧</option>
+						<option value="104 - કાવા - ૨">104 - કાવા - ૨</option>
+						<option value="107 - મહીવાડા">107 - મહીવાડા</option>
+						<option value="108 - અચરાલ">108 - અચરાલ</option>
+						<option value="105 - ગુલાબપુરા">105 - ગુલાબપુરા</option>
+						<option value="106 - બાદરપુરા">106 - બાદરપુરા</option>
+						<option value="109 - મોવતપુરા">109 - મોવતપુરા</option>
+						<option value="110 - કલ્યાણપુરા">110 - કલ્યાણપુરા</option>
+						<option value="111 - રાઓલ">111 - રાઓલ</option>
+						<option value="112 - કમાલપુર">112 - કમાલપુર</option>
+					  </select>
+				</span>		
+				<span>
+					<label for="total_booth_votes">કુલ મતદાર</label></br>
+					<input id="total_booth_votes" type="number" disabled>
+				</span>		
+			</div>
+
+			<div class="noflex">
+				<span>
+					<label for="booth">Select Time</label></br>
+					<select id="time" name="time" required>
+						<option value="" selected>----  Select ----</option>
+						<option value="7:00 -- 8:00">7:00 -- 8:00</option>
+						<option value="7:00 -- 10:00">7:00 -- 10:00</option>
+						<option value="7:00 -- 12:00">7:00 -- 12:00</option>
+						<option value="7:00 -- 14:00">7:00 -- 14:00</option>
+						<option value="7:00 -- 16:00">7:00 -- 16:00</option>
+						<option value="7:00 -- 18:00">7:00 -- 18:00</option>
+					 </select>
+				</span>		
+			</div>
+
+			<div>
+				<span>
+					<label for="male">પુરુષ</label><br/>
+					<input onblur="findTotal()" id="male" name="qty" type="number" placeholder="પુરુષ ની સંખ્યા" min="0" required>
+				</span>
+				<span>
+					<label for="female">સ્ત્રી</label></br>
+					<input onblur="findTotal()" id="female" name="qty" type="number" placeholder="સ્ત્રી ની સંખ્યા" min="0" required>
+				</span>		
+				<span>
+					<label for="female">અન્ય</label></br>
+					<input onblur="findTotal()" id="other" name="qty" type="number" placeholder="અન્ય ની સંખ્યા" min="0" required>
+				</span>				
+			</div>
+
+			<div class="noflex">
+				<span>
+					<label for="total"> CU મુજબ ટોટલ સંખ્યા</label></br>
+					<input id="cu_total" type="number" placeholder="CU મુજબ ટોટલ સંખ્યા" min="0" required>
+				</span>		
+			</div>
+
+			<div class="noflex">
+				<span>
+					<label for="total">ટોટલ સંખ્યા</label></br>
+					<input id="total" type="number" placeholder="ટોટલ સંખ્યા" disabled>
+				</span>		
+			</div>
+
+			<!-- <div class="noflex">
+				<span>
+					<label for="total_booth_votes">ટોટલ Booth Vote સંખ્યા</label></br>
+					<input id="total_booth_votes" type="number" disabled>
+				</span>		
+			</div> -->
+
+			<!-- <div class="noflex">
+				<span>
+					<label for="total_booth_votes">ટોટલ Voting Percentage</label></br>
+					<input id="total_booth_percentage" type="text">
+				</span>		
+			</div> -->
+
+			<div class="noflex">
+				<span>
+					<label for="mokpoll_agent">મોકપોલ દરમિયાન એજંટની સંખ્યા</label></br>
+					<input id="mokpoll_agent" type="number" placeholder="મોકપોલ દરમિયાન એજંટની સંખ્યા" min="0" required>
+				</span>		
+			</div>
+			<div class="noflex">
+				<span>
+					<label for="vote_agent">વોટિંગ દરમિયાન એજંટની સંખ્યા</label></br>
+					<input id="vote_agent" type="number" placeholder="વોટિંગ દરમિયાન એજંટની સંખ્યા" min="0" required>
+				</span>		
+			</div>
+			
+
+			<!-- <label for="message">Your Message</label><br/>
+			<textarea name="" id="message" rows="10" placeholder="Your Message"></textarea> -->
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+
+	<script src="whatsapp.js"></script>
+</body>
+</html>
