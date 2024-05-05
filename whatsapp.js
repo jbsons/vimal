@@ -44,9 +44,10 @@ function sendToWhatsapp(){
 	let other = document.getElementById('other').value;
 	let total = document.getElementById('total').value;
 	let cu_total = document.getElementById('cu_total').value;
+	let total_booth_votes = document.getElementById('total_booth_votes').value;
 	let mokpoll_agent = document.getElementById('mokpoll_agent').value;
 	let vote_agent = document.getElementById('vote_agent').value;
-	var percent = ((total * 100) / booth).toFixed(2);
+	var percent = ((total * 100) / total_booth_votes).toFixed(2);
 
 	var url = "https://wa.me/" + number + "?text="
 	+ "*Route No 31* " + "%0a%0a"
