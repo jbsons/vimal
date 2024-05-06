@@ -1,10 +1,37 @@
 function findVotes(){
 	let booth = document.getElementById('booth').value;
 	if(booth == "136 - સાબલવાડ કંપા (જનકપુરા)"){
-		document.getElementById('total_booth_votes').value = "470";
+		document.getElementById('total_booth_votes').value = "352";
 	}
-	else if(booth == "Idar-2"){
-		document.getElementById('total_booth_votes').value = "450";
+	else if(booth == "103 - કાવા - ૧"){
+		document.getElementById('total_booth_votes').value = "1112";
+	}
+	else if(booth == "104 - કાવા - ૨"){
+		document.getElementById('total_booth_votes').value = "744";
+	}
+	else if(booth == "107 - મહીવાડા"){
+		document.getElementById('total_booth_votes').value = "565";
+	}
+	else if(booth == "108 - અચરાલ"){
+		document.getElementById('total_booth_votes').value = "752";
+	}
+	else if(booth == "105 - ગુલાબપુરા"){
+		document.getElementById('total_booth_votes').value = "483";
+	}
+	else if(booth == "106 - બાદરપુરા"){
+		document.getElementById('total_booth_votes').value = "515";
+	}
+	else if(booth == "109 - મોવતપુરા"){
+		document.getElementById('total_booth_votes').value = "631";
+	}
+	else if(booth == "110 - કલ્યાણપુરા"){
+		document.getElementById('total_booth_votes').value = "494";
+	}
+	else if(booth == "111 - રાઓલ"){
+		document.getElementById('total_booth_votes').value = "1088";
+	}
+	else if(booth == "112 - કમાલપુર"){
+		document.getElementById('total_booth_votes').value = "1086";
 	}
 	else{
 		document.getElementById('total_booth_votes').value = "Error";
